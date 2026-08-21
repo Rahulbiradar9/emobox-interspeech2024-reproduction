@@ -1,0 +1,140 @@
+# ==============================================================================
+# EmoBox Project .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Python & Bytecode Artifacts
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------------------------------------
+# Virtual Environments
+# ------------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------------------
+# Audio Data & Large Archives (Raw Audio files should not be tracked)
+# ------------------------------------------------------------------------------
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ------------------------------------------------------------------------------
+# Machine Learning Weights & Large Checkpoints
+# ------------------------------------------------------------------------------
+exp/
+pretrained_models/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.engine
+*.safetensors
+
+# ------------------------------------------------------------------------------
+# Extracted Feature Dumps (e.g., dump/emodb/wav2vec2-base/*.npy)
+# ------------------------------------------------------------------------------
+dump/
+*.npy
+*.npz
+
+# ------------------------------------------------------------------------------
+# Experiment Tracking & Framework Caches
+# ------------------------------------------------------------------------------
+wandb/
+runs/
+lightning_logs/
+.cache/
+hf_cache/
+torch_cache/
+save/
+
+# ------------------------------------------------------------------------------
+# Jupyter Notebooks
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ------------------------------------------------------------------------------
+# Operating System Artifacts
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ------------------------------------------------------------------------------
+# IDEs & Code Editors
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# ------------------------------------------------------------------------------
+# Temporary Files, Logs & Scratchpads
+# ------------------------------------------------------------------------------
+*.log
+scratch/
+archive/
+tmp/
+temp/
